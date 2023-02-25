@@ -1,0 +1,78 @@
+<HTML>
+<SCRIPT language=JavaScript>
+
+    var message = "";
+    ///////////////////////////////////
+    function clickIE() { if (document.all) { (message); return false; } }
+    function clickNS(e) {
+        if
+            (document.layers || (document.getElementById && !document.all)) {
+            if (e.which == 2 || e.which == 3) { (message); return false; }
+        }
+    }
+    if (document.layers) { document.captureEvents(Event.MOUSEDOWN); document.onmousedown = clickNS; }
+    else { document.onmouseup = clickNS; document.oncontextmenu = clickIE; }
+
+    document.oncontextmenu = new Function("return false")
+// -->
+</SCRIPT>
+
+<HEAD>
+    <TITLE>Tặng em</TITLE>
+
+    <SCRIPT language=JavaScript>
+        <!-- Begin
+        var flag = 1;
+        function t() {
+        if(flag == 1) {
+        N.style.top = "150px";
+        N.style.left = "200px";
+        }
+        if(flag == 2) {
+        N.style.top = "150px";
+        N.style.left = "400px";
+        }
+        flag = flag + 1;
+        if(flag == 3) {
+        flag = 1;
+        }
+        }
+        function al() {
+        alert("Cảm ơn em vì em đã chọn có!!! ");
+        alert("Ngân Anh biết không (chắc là biết rồi) anh cũng yêu em rất nhiều, nhưng bấy lâu nay.........");
+        alert("Tình yêu anh dành cho em mãi đẹp và giống như những ngày tháng ban đầu chúng ta đã từng trải qua");
+        alert("Anh mong rằng một ngày nào đó chúng ta có thể thấu hiểu, thông cảm về nhau nhiều hơn !");
+        alert("Lúc đó hy vọng em hãy nhớ những kỉ niệm đẹp đẽ mà chúng ta đã có về nhau s2S2s2");
+        alert("Một tình yêu yêm ái diệu kỳ (^_^) !");
+        alert("Mang vũ trụ đẹp đẽ đến bên ta");
+        alert("Vì em chọn 'có' nên anh chúc em luôn xin xắn, dễ thương,đạt được nhiều thành công trong cuộc sống!");
+        alert("Hãy luôn hướng về nhau vk mình nhé ! Anh luôn mãi ở bên em");
+        alert("Và tin vào 1 ngày mai tươi sáng hạnh phúc sẽ đến với đôi mình.");
+        alert("Cảm ơn em đã đọc những dòng code chuối của anh gửi cho em");
+        alert("Học vui vẻ, thi out trình :)");
+        }
+        // End -->
+    </SCRIPT>
+    <script language="Javascript" src="anchuot.js"></script>
+    <base target="_self">
+</HEAD>
+
+<BODY leftMargin=0 topMargin=0 background=thanh.jpg>
+    <CENTER>
+        <FORM><BR><BR><B>
+                <FONT color="#cf4daf" face="verdana, arial" size=5>Vk có yêu Ck như Ck vẫn yêu em ?</FONT>
+            </B> <BR><BR><B>
+                <FONT color=red face="verdana, arial" size=2>Vk phải trả lời thật cho anh biết nhé...<br>Nếu em không
+                    trả lời tức là "em YÊU anh"!!!</FONT>
+            </B> <BR>
+            <DIV id=N style="HEIGHT: 30px; LEFT: 733px; POSITION: absolute; TOP: 145px; WIDTH: 100px"><INPUT
+                    onmouseover=t() type=button value=" Không "></DIV>
+            <DIV id=Y style="HEIGHT: 30px; LEFT: 299px; POSITION: absolute; TOP: 148px; WIDTH: 100px"><INPUT
+                    onclick=al() type=button value=" Có "></DIV>
+        </FORM>
+    </CENTER>
+    <p><br><br><br>
+        <center>
+</BODY>
+
+</HTML>
